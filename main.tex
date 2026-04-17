@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape HARIHARAN E} \\ \vspace{1pt}
+    Bengaluru, Karnataka, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8748937943 ~ \href{mailto:hariharanep@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hariharanep@gmail.com}} ~
+    \href{https://linkedin.com/in/hariharanep4/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hariharanep4}}  ~
+    \href{https://github.com/shreenivasa4/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/shreenivasa4}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{Experienced DevOps Engineer with 5 years of experience in managing infrastructure, automating deployments, and improving development pipelines. Proficient in cloud services, containerization, continuous integration/continuous deployment (CI/CD), and monitoring tools. Adept at collaborating with development and operations teams to enhance the efficiency and reliability of software delivery.}
+\vspace{-8pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming/Scripting Languages}{: Bash, Python, Go, Groovy} \\
+     \textbf{CI/CD}{: Jenkins, GitHub Actions, Harbor, JFrog Artifactory, Argo CD, Flux CD} \\
+     \textbf{Containerization \& Orchestration}{: Docker, Kubernetes, Helm} \\
+     \textbf{Cloud Platforms}{: Amazon Web Services (EC2, VPC, S3, RDS, IAM, Route53, CloudWatch, EKS, Lambda)} \\
+     \textbf{Infrastructure as Code}{: Terraform} \\
+     \textbf{DevSecOps}{: SonarQube, Coverity, Trivy, Anchore, Black Duck} \\
+     \textbf{Monitoring, Logging \& Tracing}{: Prometheus, Grafana, ELK Stack/OpenSearch, VictoriaMetrics, OTel, Jaeger} \\
+     \textbf{Databases}{: PostgreSQL, Cassandra} \\
+     \textbf{Networking and Security}{: OSI, TCP/IP, DNS, IPv4, HTTP/HTTPS, SSL/TLS, PKI} \\
+     \textbf{GenAI Tools}{: OpenAI ChatGPT, Anthropic Claude, Google Gemini, GitHub Copilot}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {Juniper Networks, Now Part of Hewlett Packard Enterprise (HPE)}{Aug 2025 -- Present}
+      {Software Engineer 3 - DevOps}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an end-to-end observability platform using OTel, Jaeger, and VictoriaMetrics to capture metrics, traces, and logs across microservices.}
+        \resumeItem{Designed and maintained CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to drive automated build and deployment workflows from Git to on-premises and cloud-based Kubernetes clusters, leveraging Helm for standardized release management across services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nokia}{Jul 2022 -- Aug 2025}
+      {R\&D Engineer - DevOps}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Managed the CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to automate the build and deployment flow from the Git repository to on-premises and cloud-based Kubernetes clusters, leveraging Helm as a package manager to streamline and standardize application deployments.}
+        \resumeItem{Successfully migrated from a self-hosted CI infrastructure to a centralized and secure CI platform, integrating SonarQube, JFrog Artifactory, and internal artifact repositories — improving security posture, reducing maintenance overhead, enhancing build reliability, and enabling centralized governance and compliance.}
+        \resumeItem{Managed on-premises and cloud-based Kubernetes clusters, performing zero-downtime version upgrades and optimizing resource utilization through efficient bin packing.}
+        \resumeItem{Managed comprehensive software upgrades, applying security patches across all environments to mitigate vulnerabilities, enhance system resilience, and ensure compliance, in collaboration with security and operations teams.}
+        \resumeItem{Configured and maintained AWS cloud infrastructure using Terraform, leveraging Infrastructure as Code to ensure automation, scalability, and reliability.}
+        \resumeItem{Developed and maintained scripts and tools for automating operational tasks and configuration management, improving efficiency, consistency, and reducing manual effort and operational overhead.}
+        \resumeItem{Involved in troubleshooting and resolving issues in CI/CD, development, QA, staging, pre-production and production environments in collaboration with dev, testing, and operations teams.}
+        \resumeItem{Contributed to the maintenance and enhancement of observability stacks using Prometheus, Grafana, VictoriaMetrics, Loki, and ELK/OpenSearch — improving visibility into system health and supporting efficient troubleshooting workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Test Yantra}{Apr 2021 -- Jun 2022}
+      {DevOps Engineer}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed scalable AWS infrastructure, leveraging EC2, Auto Scaling Groups, S3, and EBS for high-availability environments. Integrated CloudWatch for monitoring and Route 53 for DNS routing.}
+        \resumeItem{Refactored existing Terraform modules to align with latest practices and provider versions, reducing tech debt and improving module reusability.}
+        \resumeItem{Built and optimized Jenkins pipelines to automate end-to-end CI/CD for applications hosted on AWS, improving delivery velocity and stability.}
+        \resumeItem{Managed application deployments in Kubernetes clusters across Dev, QA, Staging, Production, and DR environments using Helm to standardize and streamline release processes.}
+        \resumeItem{Troubleshot and resolved unexpected issues across environments, and applied security patches to EC2 instances.}
+        \resumeItem{Provisioned new Kubernetes clusters based on team requirements and performed version upgrades of Kubernetes clusters and associated tools.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{{CKA: Certified Kubernetes Administrator}
+     \href{https://www.credly.com/badges/1573fc1c-d95f-4142-ace0-d3209fc1a4aa}
+     {\faExternalLinkSquare*}} \hfill \textbf{Issued Dec 2024 $\cdot$ Expires Dec 2026} \\
+     \textbf{{CKAD: Certified Kubernetes Application Developer}
+     \href{https://www.credly.com/badges/d18c3320-953b-4970-bdc0-bfcba9331298}
+     {\faExternalLinkSquare*}} \hfill \textbf{Issued Jan 2025 $\cdot$ Expires Jan 2027} \\
+     \textbf{{CKS: Certified Kubernetes Security Specialist}
+     \href{https://www.credly.com/badges/4756ed79-afb6-45aa-a27a-c7395e08168c}
+     {\faExternalLinkSquare*}} \hfill \textbf{Issued Mar 2025 $\cdot$ Expires Mar 2027} \\
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Homelab}  \href{https://github.com/shreenivasa4/homelab}
+        {\faExternalLinkSquare*} $|$ \emph{Kubernetes, Flux CD, GitHub Actions, Terraform, Amazon Web Services}}{Jan 2021}
+          \resumeItemListStart
+            \resumeItem{Enterprise-grade homelab showcasing end-to-end automation, observability, and cloud-native infrastructure.}
+            \resumeItem{Implemented GitOps workflows using Flux CD to continuously reconcile cluster state with a Git repository, enabling declarative and auditable infrastructure management.}
+            \resumeItem{Provisioned and managed AWS infrastructure with Terraform, automating resource lifecycle for compute, networking, and storage components.}
+            \resumeItem{Automated container image builds and deployments via GitHub Actions, integrating security scanning and pushing images to a private registry.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Visvesvaraya Technological University}{Aug 2016 -- Oct 2020}
+      {Bachelor of Engineering in Computer Science and Engineering}{Ramanagara, Karnataka}
+  \resumeSubHeadingListEnd
+
+\end{document}
