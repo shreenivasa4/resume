@@ -96,9 +96,9 @@
 \end{center}
 
 %-----------SUMMARY-----------
-\section{Summary}
-\small{Experienced DevOps Engineer with 5 years of experience in managing infrastructure, automating deployments, and improving development pipelines. Proficient in cloud services, containerization, continuous integration/continuous deployment (CI/CD), and monitoring tools. Adept at collaborating with development and operations teams to enhance the efficiency and reliability of software delivery.}
-\vspace{-8pt}
+% \section{Summary}
+% \small{Experienced DevOps Engineer with 5 years of experience in managing infrastructure, automating deployments, and improving development pipelines. Proficient in cloud services, containerization, continuous integration/continuous deployment (CI/CD), and monitoring tools.}
+% \vspace{-8pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -126,34 +126,44 @@
       {Juniper Networks, Now Part of Hewlett Packard Enterprise (HPE)}{Aug 2025 -- Present}
       {Software Engineer 3 - DevOps}{Bengaluru, Karnataka}
       \resumeItemListStart
-        \resumeItem{Designed and implemented an end-to-end observability platform using OTel, Jaeger, and VictoriaMetrics to capture metrics, traces, and logs across microservices.}
-        \resumeItem{Designed and maintained CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to drive automated build and deployment workflows from Git to on-premises and cloud-based Kubernetes clusters, leveraging Helm for standardized release management across services.}
+        % \resumeItem{Designed and implemented an end-to-end observability platform using OTel, Jaeger, and VictoriaMetrics to capture metrics, traces, and logs across microservices.}
+        % \resumeItem{Designed and maintained CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to drive automated build and deployment workflows from Git to on-premises and cloud-based Kubernetes clusters, leveraging Helm for standardized release management across services.}
+        \resumeItem{Led end-to-end CI/CD toolchain upgrades — spanning the Jenkins controller and agents, Flux CD, Coverity, and Trivy — to remediate critical vulnerabilities, unlock new platform capabilities, and strengthen security posture and pipeline reliability.}
+        \resumeItem{Refactored Jenkins shared libraries to consolidate duplicated pipeline logic into reusable components, improving maintainability and pipeline consistency across teams.}
+        \resumeItem{Developed automation to continuously audit and auto-remediate GitLab repository settings across 150+ repositories, ensuring consistent configuration compliance and reducing manual governance overhead.}
+        \resumeItem{Built a repository compliance audit system that identified stale repositories and enforced CI/CD gate compliance by triggering automated merge requests — prompting developers to resolve failing pipeline checks.}
+        \resumeItem{Managed and upgraded cloud-based (AWS EKS) and on-premises (RKE2) Kubernetes clusters, ensuring platform reliability, security compliance, and minimal workload disruption.}
+        \resumeItem{Maintained and upgraded in-cluster Kubernetes platform components to continuously remediate CVEs, introduce new capabilities, and uphold a hardened security posture.}
+        \resumeItem{Orchestrated workload migrations to HPE data centers following company acquisition, ensuring service continuity and minimal downtime during infrastructure cutover.}
+        \resumeItem{Evaluated and onboarded new DevOps tooling through structured POCs based on developer requirements, accelerating adoption of vetted solutions across engineering teams.}
+        \resumeItem{Managed artifact lifecycle in JFrog Artifactory — including Docker base images and binary packages across technology stacks — onboarding developer-requested artifacts to remediate Trivy-detected vulnerabilities and maintain a secure, up-to-date catalog for microservice teams.}
+        \resumeItem{Participated in an on-call rotation as the primary point of contact for DevOps platform and infrastructure support tickets, ensuring timely triage and resolution.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Nokia}{Jul 2022 -- Aug 2025}
       {R\&D Engineer - DevOps}{Bengaluru, Karnataka}
       \resumeItemListStart
-        \resumeItem{Managed the CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to automate the build and deployment flow from the Git repository to on-premises and cloud-based Kubernetes clusters, leveraging Helm as a package manager to streamline and standardize application deployments.}
-        \resumeItem{Successfully migrated from a self-hosted CI infrastructure to a centralized and secure CI platform, integrating SonarQube, JFrog Artifactory, and internal artifact repositories — improving security posture, reducing maintenance overhead, enhancing build reliability, and enabling centralized governance and compliance.}
+        \resumeItem{Managed CI/CD pipelines using Jenkins, GitLab CI, and Argo CD to automate build and deployment workflows from Git to on-premises and cloud-based Kubernetes clusters, leveraging Helm for standardized release management across services.}
+        \resumeItem{Migrated from a self-hosted CI infrastructure to a centralized and secure CI platform, integrating SonarQube, JFrog Artifactory, and internal artifact repositories — improving security posture, reducing maintenance overhead, enhancing build reliability, and enabling centralized governance and compliance.}
         \resumeItem{Managed on-premises and cloud-based Kubernetes clusters, performing zero-downtime version upgrades and optimizing resource utilization through efficient bin packing.}
-        \resumeItem{Managed comprehensive software upgrades, applying security patches across all environments to mitigate vulnerabilities, enhance system resilience, and ensure compliance, in collaboration with security and operations teams.}
-        \resumeItem{Configured and maintained AWS cloud infrastructure using Terraform, leveraging Infrastructure as Code to ensure automation, scalability, and reliability.}
-        \resumeItem{Developed and maintained scripts and tools for automating operational tasks and configuration management, improving efficiency, consistency, and reducing manual effort and operational overhead.}
-        \resumeItem{Involved in troubleshooting and resolving issues in CI/CD, development, QA, staging, pre-production and production environments in collaboration with dev, testing, and operations teams.}
-        \resumeItem{Contributed to the maintenance and enhancement of observability stacks using Prometheus, Grafana, VictoriaMetrics, Loki, and ELK/OpenSearch — improving visibility into system health and supporting efficient troubleshooting workflows.}
+        \resumeItem{Led comprehensive software upgrades, applying security patches across all environments to mitigate vulnerabilities, enhance system resilience, and ensure compliance, in collaboration with security and operations teams.}
+        \resumeItem{Configured and maintained AWS cloud infrastructure using Terraform, ensuring automated provisioning, scalability, and reliability.}
+        \resumeItem{Developed and maintained automation scripts and internal tooling to streamline operational tasks and configuration management, reducing manual overhead and improving operational consistency.}
+        \resumeItem{Diagnosed and resolved issues across CI/CD, development, QA, staging, and production environments, collaborating with development, testing, and operations teams.}
+        \resumeItem{Maintained and enhanced observability stacks using Prometheus, Grafana, VictoriaMetrics, Loki, and ELK/OpenSearch — improving system health visibility and enabling efficient troubleshooting workflows.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Test Yantra}{Apr 2021 -- Jun 2022}
       {DevOps Engineer}{Bengaluru, Karnataka}
       \resumeItemListStart
-        \resumeItem{Designed and deployed scalable AWS infrastructure, leveraging EC2, Auto Scaling Groups, S3, and EBS for high-availability environments. Integrated CloudWatch for monitoring and Route 53 for DNS routing.}
+        \resumeItem{Designed and deployed scalable, high-availability AWS infrastructure using EC2, Auto Scaling Groups, S3, and EBS, integrating CloudWatch for monitoring and Route 53 for DNS management.}
         \resumeItem{Refactored existing Terraform modules to align with latest practices and provider versions, reducing tech debt and improving module reusability.}
         \resumeItem{Built and optimized Jenkins pipelines to automate end-to-end CI/CD for applications hosted on AWS, improving delivery velocity and stability.}
         \resumeItem{Managed application deployments in Kubernetes clusters across Dev, QA, Staging, Production, and DR environments using Helm to standardize and streamline release processes.}
-        \resumeItem{Troubleshot and resolved unexpected issues across environments, and applied security patches to EC2 instances.}
-        \resumeItem{Provisioned new Kubernetes clusters based on team requirements and performed version upgrades of Kubernetes clusters and associated tools.}
+        \resumeItem{Performed OS-level security patching on EC2 instances to remediate CVEs, maintaining system stability and ensuring compliance with security baselines.}
+        \resumeItem{Provisioned and upgraded Kubernetes clusters based on team requirements, keeping the platform current with the latest versions and associated tooling.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -182,9 +192,9 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading
         {\textbf{Homelab}  \href{https://github.com/shreenivasa4/homelab}
-        {\faExternalLinkSquare*} $|$ \emph{Kubernetes, Flux CD, GitHub Actions, Terraform, Amazon Web Services}}{Jan 2021}
+        {\faGithub} $|$ \emph{Kubernetes, Flux CD, GitHub Actions, Terraform, Amazon Web Services}}{Jan 2021}
           \resumeItemListStart
-            \resumeItem{Enterprise-grade homelab showcasing end-to-end automation, observability, and cloud-native infrastructure.}
+            \resumeItem{A personal Kubernetes-based homelab built to self-host services, experiment with cloud-native tooling, and maintain a hands-on environment for continuous learning.}
             \resumeItem{Implemented GitOps workflows using Flux CD to continuously reconcile cluster state with a Git repository, enabling declarative and auditable infrastructure management.}
             \resumeItem{Provisioned and managed AWS infrastructure with Terraform, automating resource lifecycle for compute, networking, and storage components.}
             \resumeItem{Automated container image builds and deployments via GitHub Actions, integrating security scanning and pushing images to a private registry.}
